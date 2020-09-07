@@ -1,2 +1,2 @@
 # bookSummary
-Summarries Of Books I am Currently Reading
+Notes from reading books currently on my reading list
