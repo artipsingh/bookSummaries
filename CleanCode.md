@@ -66,8 +66,58 @@ Give variables context for readability
 
 ### Don't Add Gratuitious Context
 
+# Functions
+Functions are the first line of organization in any program.
 
+### Small
+The best functions are 2-3, maybe 4 lines long.
 
+### Blocks and Indenting
+The blocks within if/while/do while statements should be one line long.
 
+### Do One Thing
 
+A function should only do one thing and do it well.
 
+### One Level Of Abstraction Per Function
+
+Statements within a function must be at the same level of abstraction.
+
+### Reading Code From Top To Bottom: The Stepdown Rule
+The code should read like a narrative.
+
+### Descriptive Names
+Choose a descriptive name for a small function that does 1 thing
+Searching for a good name can lead to well-structured code
+
+### Function Arguments
+The ideal number of arguments for a function is 0, then 1, then 2...3 and lastly 4. 
+Try as best as you can to avoid having functions that take 3 or more arguments. If you do need to have a function that takes more than 2 arguments, use a data structure such as a hash and pass that hash or other data structure into your function. Testing time increases per function arguments.
+
+### Common Monadic Forms
+
+### Flag Arguments
+Try to not pass boolean arguments to a function.
+
+### Verbs And Keywords
+Good names describe the intent of functions. 
+
+### Have No Side Effects
+Make a function that only does the thing it says it does
+
+### Output Arguments
+Have functions change the state of their owning object, avoid if possible, returning an argument in a function
+
+### Command Query Separation
+Change or answer, not both
+
+### Prefer Exceptions To Returning Error Codes
+Avoid returning exceptions as this violates command query separation.
+
+### Error Handling Is One Thing
+Functions that handle errors should only handle errors.
+
+### Don't Repeat Yourself
+
+### How Do You Write Functions Like This?
+Code as you usually would, then before you're ready to submit a PR, refactor your functions so that it follows most of the rules listed above
